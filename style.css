@@ -5,6 +5,7 @@ body {
 
 div {
   box-sizing: border-box;
+  color: rgb(22, 47, 53);
 }
 
 @media only screen and (min-width: 500px) {
@@ -206,9 +207,9 @@ div {
 }
 
 .projects-square {
-  -webkit-box-shadow: -1px 6px 11px 4px rgba(30, 62, 70, 0.1);
-  -moz-box-shadow: -1px 6px 11px 4px rgba(30, 62, 70, 0.1);
-  box-shadow: -1px 6px 11px 4px rgba(30, 62, 70, 0.1);
+  -webkit-box-shadow: -1px 6px 11px 4px rgba(49, 101, 114, 0.1);
+  -moz-box-shadow: -1px 6px 11px 4px rgba(49, 101, 114, 0.1);
+  box-shadow: -1px 6px 11px 4px rgba(49, 101, 114, 0.1);
   border-radius: 20px;
   padding: 20px;
   margin: 10px;
@@ -216,10 +217,12 @@ div {
 
 .projects-square__title {
   text-align: center;
+  margin-top: 5px;
 }
 
 .projects-square__text {
   text-align: center;
+  margin-bottom: 5px;
 }
 
 @media only screen and (min-width: 500px) {
