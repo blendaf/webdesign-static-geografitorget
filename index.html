@@ -21,6 +21,8 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+
+    <script src="Script.js"></script>
   </head>
   <body>
     <nav class="navbar"></nav>
@@ -137,6 +139,12 @@
             <li class="skills__list-item">
               Usability Evaluation
             </li>
+            <li class="skills__list-item">
+              Next.js
+            </li>
+            <li class="skills__list-item">
+              React
+            </li>
           </ul>
         </div>
       </div>
@@ -144,87 +152,158 @@
     <div class="section">
       <div class="container">
         <div class="projects">
-          <div class="projects-square">
-            <h2 class="projects-square__title">Pepp</h2>
-            <p class="projects-square__text">
-              PR and Graphics Manager Stockholm Project Group. Pepp is a six
-              month long mentorship program with the goal to encourage more
-              girls to pursue a career in the field of tech.
-            </p>
+          <div class="project-square">
+            <div class="project-square--overlay"></div>
+            <img class="project-square--image" src="images/pepp.jpg" />
+            <div class="project-square__content fadeIn-bottom">
+              <h3 class="project-square__title">Pepp</h3>
+              <p class="project-square__text">
+                PR and Graphics Manager Stockholm Project Group. Pepp is a six
+                month long mentorship program with the goal to encourage more
+                girls to pursue a career in the field of tech.
+              </p>
+            </div>
           </div>
 
-          <div class="projects-square">
-            <h2 class="projects-square__title">Sthlm Commuter</h2>
-            <p class="projects-square__text">
-              Further developed an android app, in java, for public
-              transportation in a team. Used scrum as the development method.
-            </p>
+          <div class="project-square">
+            <div class="project-square--overlay"></div>
+            <img class="project-square--image" src="images/commuter.jpg" />
+            <!-- Photo by Nikola Johnny Mirkovic on Unsplash -->
+            <div class="project-square__content fadeIn-bottom">
+              <h3 class="project-square__title">Sthlm Commuter</h3>
+              <p class="project-square__text">
+                Further developed an android app, in java, for public
+                transportation in a team. Used scrum as the development method.
+              </p>
+            </div>
           </div>
-          <div class="projects-square">
-            <h2 class="projects-square__title">Usability of an E-wallet</h2>
-            <p class="projects-square__text">
-              Designed and usability tested a crypto currency mobile payment
-              applications as my bachelor thesis.
-            </p>
-          </div>
-          <div class="projects-square">
-            <h2 class="projects-square__title">
-              ARCity-Wide Outdoor Art Gallery
-            </h2>
-            <p class="projects-square__text">
-              In a project group of four we studied and critiqued a number of
-              interaction designmethodologies. We then applied thesemethodologies
-              to the different stages of our design process to create a concept
-              design.
-            </p>
-          </div>
-          <div class="projects-square">
-            <h2 class="projects-square__title">
-              IxDA Interaction Week 2020
-            </h2>
-            <p class="projects-square__text">
-             Worked as the sponsor liason volunteer at IxDA's Interaction Week 2020 in Milan, Italy. IxDA's Interaction Week is one of the largest events dedicated to interaction design featuring speakers presenting the latest and future visions in the industry.
-            </p>
-          </div>
-          <!-- <div class="projects-square">
-            <h2 class="projects-square__title">
-             Female Student Accerletation Program Attendee
-            </h2>
-            <p class="projects-square__text">
-              Female Student Acceleration Program is an exclusive network for talented women studying in the fields Information Technology, Management Consulting, Business and Service Design.
 
-Over the period of a year, through workshops, presentations and challenges, Acando provides a set of tools, hands on experience and practical insights for the students to use during their remaining time at the university as well as a kick start to their career.
+          <div class="project-square">
+            <div class="project-square--overlay"></div>
+            <img class="project-square--image" src="images/kex.png" />
+            <div class="project-square__content fadeIn-bottom">
+              <h3 class="project-square__title">Usability of an E-wallet</h3>
+              <p class="project-square__text">
+                Designed and usability tested a crypto currency mobile payment
+                applications as my bachelor thesis.
+              </p>
+            </div>
+          </div>
 
-            </p>
-          </div> -->
+          <div class="project-square">
+            <div class="project-square--overlay"></div>
+            <img class="project-square--image" src="images/construct.jpeg" />
+            <div class="project-square__content fadeIn-bottom">
+              <h3 class="project-square__title">
+                ARCity-Wide Outdoor Art Gallery
+              </h3>
+              <p class="project-square__text">
+                In a project group of four we studied and critiqued a number of
+                interaction designmethodologies. We then applied
+                thesemethodologies to the different stages of our design process
+                to create a concept design.
+              </p>
+            </div>
+          </div>
+
+          <div class="project-square">
+            <div class="project-square--overlay"></div>
+            <img class="project-square--image" src="images/ixda.jpg" />
+            <div class="project-square__content fadeIn-bottom">
+              <h3 class="project-square__title">IxDA Interaction Week 2020</h3>
+              <p class="project-square__text">
+                Worked as the sponsor liason volunteer at IxDA's Interaction
+                Week 2020 in Milan, Italy. IxDA's Interaction Week is one of the
+                largest events dedicated to interaction design featuring
+                speakers presenting the latest and future visions in the
+                industry.
+              </p>
+            </div>
+          </div>
+
+          <div class="project-square">
+            <div class="project-square--overlay"></div>
+            <img class="project-square--image" src="images/women.jpg" />
+            <!-- Photo by NeONBRAND on Unsplash -->
+            <div class="project-square__content fadeIn-bottom">
+              <h3 class="project-square__title">
+                Female Student Accerletation Program Attendee
+              </h3>
+              <p class="project-square__text">
+                Female Student Acceleration Program is an exclusive network for
+                talented women studying in the fields Information Technology,
+                Management Consulting, Business and Service Design. Over the
+                period of a year, through workshops, presentations and
+                challenges, Acando provides a set of tools, hands on experience
+                and practical insights for the students to use during their
+                remaining time at the university as well as a kick start to
+                their career.
+              </p>
+            </div>
+          </div>
+          <div class="project-square">
+            <div class="project-square--overlay"></div>
+            <img class="project-square--image" src="images/speakexchange.png" />
+            <div class="project-square__content fadeIn-bottom">
+              <h3 class="project-square__title">
+                Speak.exchange
+              </h3>
+              <p class="project-square__text">
+                In a group of four we are developing speak.exchange which is an
+                online bilingual dictionary, that offers a spaced-repetition
+                system(SRS) forlearning new words in a foreign language. Found
+                at speak.exchange.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-
-
-   
     <footer class="footer">
       <div class="container">
-
-        <div class="footer-contactbar"> 
+        <div class="footer-contactbar">
           <a href="https://github.com/blendaf" class="footer-contactbar__icons">
-          <i class="fab fa-github fa-lg" style="color:black;"></i
-        ></a>
-        <a href="https://www.linkedin.com/in/blendafrojdh/" class="footer-contactbar__icons"
-          ><i class="fab fa-linkedin-in fa-lg" style="color:black;"></i
-        ></a>
-        <!-- <div class="tooltip"> -->
+            <i class="fab fa-github fa-lg" style="color: black;"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/blendafrojdh/"
+            class="footer-contactbar__icons"
+            ><i class="fab fa-linkedin-in fa-lg" style="color: black;"></i
+          ></a>
+          <!-- <div class="tooltip"> -->
           <!-- <span class="tooltiptext">blendaf@kth.se</span> -->
           <a href="mailto: blendaf@kth.se" class="footer-contactbar__icons">
-            <i class="fas fa-at fa-lg" style="color:black;"></i
+            <i class="fas fa-at fa-lg" style="color: black;"></i
           ></a>
-        <!-- <div> --></div>
-       
-          <i class="far fa-copyright " style="color:black;"></i>
-          <h1 class="footer__title">2019 Blenda Fröjdh</h1>
+          <!-- <div> -->
         </div>
+
+        <i class="far fa-copyright" style="color: black;"></i>
+        <h1 class="footer__title">2019 Blenda Fröjdh</h1>
       </div>
     </footer>
+    <script>
+      const hover = [...document.querySelectorAll('.js-hover')]
+      console.log(hover)
+
+      hover.forEach((element) => {
+        element.addEventListener('mouseover', mouseOver, false)
+        element.addEventListener('mouseout', mouseOut, false)
+      })
+
+      // hover.forEach(element => {
+      //   element.style.backgroundColor = 'red'
+      //   console.log(element.className)
+      // })
+
+      function mouseOver() {
+        event.currentTarget.classList.add('hover')
+      }
+
+      function mouseOut() {
+        event.currentTarget.classList.remove('hover')
+      }
+    </script>
   </body>
 </html>
