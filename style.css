@@ -76,6 +76,13 @@ div {
   margin: 0 auto;
 }
 
+.container--row {
+  display: flex;
+
+  width: 90%;
+  margin: 0 auto;
+}
+
 @media only screen and (min-width: 500px) {
   .container--narrow {
     width: 50%;
@@ -200,6 +207,65 @@ div {
     border: 2px solid rgb(103, 205, 228);
   }
 }
+
+/* ===== EXPERIENCE ===== */
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex: 0.5;
+  position: relative;
+  margin: 120px 0;
+}
+
+.experience-box--right {
+  position: absolute;
+  left: calc(50% - 3.5px);
+  border-style: none none none solid;
+  border-color: rgb(103, 205, 228);
+  color: rgb(103, 205, 228);
+  border-width: 7px;
+  padding-left: 10px;
+}
+
+.experience-box--left {
+  position: absolute;
+  right: calc(50% - 3.5px);
+  border-style: none solid none none;
+  border-color: rgb(103, 205, 228);
+  color: rgb(103, 205, 228);
+  border-width: 7px;
+  padding-right: 10px;
+}
+
+.experience__title {
+  margin: 5px auto;
+  text-align: center;
+  font-weight: 100;
+  font-size: 40px;
+}
+
+.experience__date {
+  color: rgb(103, 205, 228);
+}
+
+.experience__company {
+  font-size: 30px;
+  font-weight: 300;
+}
+.experience__company--left {
+  text-align: end;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.experience__text--left {
+  text-align: end;
+}
+
+/* ==================== */
 
 /* ===== PROJECTS ===== */
 
