@@ -103,13 +103,23 @@ div {
   font-weight: lighter;
 }
 
-@media only screen and (min-width: 500px) {
-  .name-box__title-text {
-    font-size: 50px;
+@media only screen and (min-width: 600px) {
+  .name-box {
+    padding: 50px;
   }
 
+  .name-box__title-text {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 830px) {
   .name-box {
     padding: 100px;
+  }
+
+  .name-box__title-text {
+    font-size: 50px;
   }
 }
 
@@ -217,34 +227,41 @@ div {
   align-items: flex-end;
   flex: 0.5;
   position: relative;
-  margin: 120px 0;
+  height: 120px;
 }
 
 .experience-box--right {
   position: absolute;
   left: calc(50% - 3.5px);
+  top: 0;
+  bottom: 10%;
   border-style: none none none solid;
   border-color: rgb(103, 205, 228);
   color: rgb(103, 205, 228);
   border-width: 7px;
   padding-left: 10px;
+  height: 120px;
 }
 
 .experience-box--left {
   position: absolute;
   right: calc(50% - 3.5px);
+  top: 0;
   border-style: none solid none none;
   border-color: rgb(103, 205, 228);
   color: rgb(103, 205, 228);
   border-width: 7px;
   padding-right: 10px;
+  height: 120px;
+}
+
+.experience__content {
+  padding: 10px 0;
 }
 
 .experience__title {
   margin: 5px auto;
   text-align: center;
-  font-weight: 100;
-  font-size: 40px;
 }
 
 .experience__date {
@@ -252,17 +269,39 @@ div {
 }
 
 .experience__company {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 300;
 }
 .experience__company--left {
   text-align: end;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 300;
 }
 
 .experience__text--left {
   text-align: end;
+}
+
+@media only screen and (min-width: 500px) {
+  .experience {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex: 0.5;
+    position: relative; */
+    /* height: 100px; */
+  }
+
+  .experience__company {
+    font-size: 30px;
+    font-weight: 300;
+  }
+  .experience__company--left {
+    text-align: end;
+    font-size: 30px;
+    font-weight: 300;
+  }
 }
 
 /* ==================== */
@@ -274,6 +313,7 @@ div {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 40px;
 }
 
 .project-square {
