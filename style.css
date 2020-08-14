@@ -283,16 +283,6 @@ div {
 }
 
 @media only screen and (min-width: 500px) {
-  .experience {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex: 0.5;
-    position: relative; */
-    /* height: 100px; */
-  }
-
   .experience__company {
     font-size: 30px;
     font-weight: 300;
@@ -334,7 +324,7 @@ div {
   top: 0;
   bottom: 0;
   right: 0;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
@@ -357,19 +347,10 @@ div {
   width: 100%;
   top: 50%;
   left: 50%;
-  opacity: 0;
+  opacity: 1;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.project-square:hover .project-square__content {
-  top: 50%;
-  left: 50%;
-  opacity: 1;
 }
 
 .project-square__title {
@@ -378,15 +359,12 @@ div {
   letter-spacing: 0.15em;
   margin-bottom: 0.5em;
   text-transform: uppercase;
+  font-size: 15px;
 }
 
 .project-square__text {
   color: #fff;
   font-size: 0.8em;
-}
-
-.fadeIn-bottom {
-  top: 80%;
 }
 
 @media only screen and (min-width: 500px) {
@@ -398,6 +376,31 @@ div {
 
   .project-square {
     max-width: 400px;
+  }
+
+  .project-square--overlay {
+    opacity: 0;
+  }
+
+  .project-square__content {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .project-square:hover .project-square__content {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
+
+  .project-square__title {
+    font-size: 20px;
+  }
+
+  .fadeIn-bottom {
+    top: 80%;
   }
 }
 
