@@ -426,6 +426,25 @@ div {
   font-weight: lighter;
 }
 
+.footer__photocredit {
+  font-size: 10px;
+  font-weight: lighter;
+  text-decoration: none;
+  color: black;
+}
+
+.footer__photocredit--link {
+  font-size: 10px;
+  font-weight: lighter;
+  text-decoration: none;
+  color: black;
+  display: inline;
+}
+
+.footer__photocredit--link:hover {
+  color: rgb(103, 205, 228);
+}
+
 /* ===== JS FUCNTIONS ===== */
 
 .hover {
