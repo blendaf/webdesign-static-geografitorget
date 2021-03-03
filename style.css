@@ -1,6 +1,16 @@
 body {
-  font-family: 'EB Garamond', serif;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Quicksand', sans-serif;
+  /* font-family: 'Abel', sans-serif; */
+  /* font-family: 'Open Sans', sans-serif;  */
+  font-size: 12px;
   margin: 0px;
+}
+
+@media only screen and (min-width: 500px) {
+  body {
+    font-size: 22px;
+  }
 }
 
 div {
@@ -14,25 +24,65 @@ div {
   }
 }
 
+h1,
+h2,
+h3 {
+  /* font-family: 'Abel', sans-serif; */
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 500px) {
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+}
+
 /* 
 ===== HEADER =====
 */
 
 .header {
-  background-image: url(images/yay.jpg);
+  /* background-image: url(images/yay.jpg);
   background-attachment: fixed;
   background-size: 100vw;
   background-repeat: no-repeat;
-  height: 58.837891vw;
+  height: 58.837891vw; */
+  padding: 20px 0px;
 }
 
 .header__aligner {
   display: flex;
   margin: auto;
-  width: 60%;
+  width: 80%;
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+
+@media only screen and (min-width: 500px) {
+  .header {
+    background-image: url(images/yay.jpg);
+    background-attachment: fixed;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    height: 58.837891vw;
+  }
+
+  .header__aligner {
+    width: 60%;
+  }
 }
 
 /* 
@@ -44,9 +94,14 @@ div {
 */
 
 .section {
-  margin: 100px auto;
+  margin: 50px auto;
 }
 
+@media only screen and (min-width: 500px) {
+  .section {
+    margin: 100px auto;
+  }
+}
 /* 
 ===================
 */
@@ -89,43 +144,68 @@ div {
   }
 }
 
-/* ===== NAMEBOX ===== */
+/* ===== PROFILE ===== */
 
-.name-box {
+.profile {
   text-align: center;
   background-color: rgb(235, 243, 245, 0.8);
+  width: 100%;
   padding: 20px;
 }
 
-.name-box__title-text {
-  font-size: 30px;
+.profile__text {
+  padding: 8px 0px 0px 0px;
+  font-size: 10px;
   letter-spacing: 2px;
-  font-weight: lighter;
+}
+
+.profile__image {
+  width: 150px;
+  padding: 5px;
+}
+
+.contactbar {
+  margin: 10px;
+}
+
+.contactbar__icons {
+  margin: 2px;
+  font-size: 15px;
 }
 
 @media only screen and (min-width: 600px) {
-  .name-box {
+  .profile {
     padding: 50px;
   }
 
-  .name-box__title-text {
+  .profile__title-text {
     font-size: 40px;
   }
 }
 
 @media only screen and (min-width: 830px) {
-  .name-box {
-    padding: 100px;
+  .profile {
+    padding: 50px;
   }
 
-  .name-box__title-text {
-    font-size: 50px;
+  .profile__text {
+    font-size: 22px;
+    padding: 25px 10px 0px 0px;
+  }
+
+  .profile__image {
+    width: 300px;
+  }
+
+  .contactbar__icons {
+    margin: 5px;
+    font-size: 20px;
   }
 }
 
-/* ===== PROFILE ===== */
+/* ===== BIO ===== */
 
-.profile {
+.bio {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,23 +213,14 @@ div {
   padding: 20px;
 }
 
-.profile__image {
-  width: 200px;
-  padding: 5px;
-}
-
-.profile__text {
+.bio__text {
   padding: 5px;
   text-align: center;
 }
 
 @media only screen and (min-width: 500px) {
-  .profile {
-    flex-direction: row;
-  }
-
-  .profile__image {
-    width: 200px;
+  .bio {
+    flex-direction: column;
   }
 }
 
@@ -274,12 +345,12 @@ div {
 }
 
 .experience__company {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
 }
 .experience__company--left {
   text-align: end;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
 }
 
@@ -417,17 +488,8 @@ div {
   padding: 50px;
 }
 
-.footer-contactbar {
-  margin: 10px;
-}
-
-.footer-contactbar__icons {
-  margin: 5px;
-}
-
 .footer__title {
   display: inline;
-  font-size: 20px;
   font-weight: lighter;
 }
 
@@ -459,3 +521,7 @@ div {
 /* ======================== */
 
 @import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
